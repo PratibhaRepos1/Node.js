@@ -12,6 +12,8 @@ const contactRoute = require('./routes/contact');
 const app = express();
 const port = 3000;
 
+
+  
 // Set up Mongoose
 mongoose.connect('mongodb://localhost:27017/mediaDb', { useUnifiedTopology: true });
 const db = mongoose.connection;
@@ -23,13 +25,23 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public/images')));
 
+// Define an array of image URLs
+const images = [
+    'news1.jpg',
+    'news2.jpg',
+    'news3.jpg',
+    // Add more image URLs as needed
+  ];
+
 
 // // Define a route to render the page with the header template
 // app.get('/', (req, res) => {
 //     res.render('Home/home');
 // });
+// Define a route to render the ImageSlider.ejs template
 
-// Define a route to render the home page with weather data
+
+// Define a route to render the home page with weather data and images
 app.get('/', async (req, res) => {
     try {
         // Fetch weather data from OpenWeatherMap API
@@ -38,7 +50,7 @@ app.get('/', async (req, res) => {
         const weatherResponse = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`);
         const weatherData = weatherResponse.data;
 
-        res.render('Home/home', { weatherData });
+        res.render('Home/home', { weatherData, images });
     } catch (error) {
         console.error("Error fetching weather data:", error);
         res.status(500).send("Internal Server Error");

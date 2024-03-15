@@ -18,22 +18,12 @@
       <%- include('../Header/header') %>
 
       <hr />
-      <h2>Weather Report</h2>
-      <div>
-        <% if (weatherData) { %>
-        <div class="container mt-4">
-          <h3>Current Weather in <%= weatherData.name %></h3>
-          <p>
-            Temperature: <%= Math.round(weatherData.main.temp - 273.15) %>°C
-          </p>
-          <p>Weather: <%= weatherData.weather[0].description %></p>
-          <!-- Add more weather information as needed -->
-        </div>
-        <% } %>
-      </div>
+
+      <%- include('../Weather/weather') %>
+
       <br />
       <hr />
-      <h2>Image Slider</h2>
+      <%- include('../ImageSlido/imageslido') %>
       <br />
       <hr />
       <h2>Latest News 1 | Latest News 2 | Latest News 3</h2>

@@ -1,0 +1,27 @@
+[
+    {
+        "title": "India's WPI inflation eases to four-month low of 0.20 per cent in February",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae nisi at mi consequat venenatis vel a eros.",
+        "author": "John Doe",
+        "created_date": "2024-02-15T08:00:00Z"      
+    },
+    {
+        "title": "India-China border deployment risk for potential armed conflict: US intel report",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae nisi at mi consequat venenatis vel a eros.",
+        "author": "John Doe",
+        "created_date": "2024-03-15T08:00:00Z"    
+    },
+    {
+        "title": "India signs $100bn free trade deal with four European nations",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae nisi at mi consequat venenatis vel a eros.",
+        "author": "John Doe",
+        "created_date": "2024-03-14T08:00:00Z"     
+     },
+     {
+        "title": "India plans economic data improvements, long-delayed population census",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae nisi at mi consequat venenatis vel a eros.",
+        "author": "John Doe",
+        "created_date": "2024-03-11T08:00:00Z"
+     } 
+
+]

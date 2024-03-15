@@ -6,7 +6,7 @@ const AboutUs = require('../models/aboutus');
 router.get('/', async (req, res) => {
     try {
         const aboutusData = await AboutUs.find({});
-        console.log(aboutusData);
+        //console.log(aboutusData);
         res.render('AboutUs/aboutus', { aboutus: aboutusData });
     } catch (error) {
         console.error("Error fetching data from MongoDB:", error);
